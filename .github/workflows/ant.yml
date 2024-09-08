@@ -27,4 +27,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     - name: Build with Ant
-      run: ant -noinput -buildfile build.xml
+      run: ant run -buildfile build.xml
